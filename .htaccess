@@ -1,0 +1,45 @@
+# توجيه /8-Player/ إلى dist
+
+DirectoryIndex dist/index.html
+
+Options -Indexes
+
+
+
+<IfModule mod_authz_core.c>
+
+  Require local
+
+</IfModule>
+
+
+
+<IfModule mod_headers.c>
+
+  <FilesMatch "\.(js|css|html)$">
+
+    Header set Access-Control-Allow-Origin "*"
+
+  </FilesMatch>
+
+</IfModule>
+
+
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+
+  RewriteBase /8-Player/
+
+
+
+  RewriteRule ^assets/(.*)$ dist/assets/$1 [L]
+
+  RewriteRule ^$ dist/index.html [L]
+
+  RewriteRule ^index\.html$ dist/index.html [L]
+
+</IfModule>
+
+

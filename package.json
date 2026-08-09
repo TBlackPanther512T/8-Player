@@ -1,0 +1,25 @@
+{
+  "name": "copy-of-copy-of-السينما-الخاصة---مشغل-فيديو-تكرار-عدة-مشاهد-في-نفس-الفيديو",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/fix-dist-html.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^0.556.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "puppeteer-core": "^25.0.4",
+    "tailwindcss": "^4.3.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
